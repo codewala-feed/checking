@@ -15,3 +15,7 @@ results = my_db["results"]
 def insert_data(raw):
     results.insert_one(raw)
     return "Data Inserted :)"
+
+def delete_data(raw):
+    results.delete_one(raw)
+    return "Data Deleted :("
